@@ -1,0 +1,9 @@
+aws_region          = "us-east-1"
+project_name        = "smmb"
+environment         = "dev"
+container_image_tag = "latest"
+ses_sender_email    = "verified@example.com"
+
+# Keep the defaults for a low-cost development deployment.
+db_instance_class = "db.t4g.micro"
+redis_node_type   = "cache.t4g.micro"

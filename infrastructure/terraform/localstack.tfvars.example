@@ -1,0 +1,12 @@
+localstack_enabled  = true
+localstack_endpoint = "http://localhost.localstack.cloud:4566"
+aws_region          = "us-east-1"
+project_name        = "smmb"
+environment         = "local"
+container_image_tag = "latest"
+
+# Disable expensive/long-running managed data resources for the fast local loop.
+# Set these to true when your LocalStack plan includes RDS and ElastiCache.
+enable_database = false
+enable_redis    = false
+enable_frontend = false

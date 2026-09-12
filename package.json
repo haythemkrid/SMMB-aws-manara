@@ -1,0 +1,19 @@
+{
+  "name": "smmb-maintenance-system",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev:auth": "tsx services/auth/src/index.ts",
+    "dev:requests": "tsx services/requests/src/index.ts",
+    "dev:notifications": "tsx services/notifications/src/index.ts",
+    "dev:frontend": "vite --config vite.config.js frontend --host 0.0.0.0",
+    "build": "tsc --noEmit",
+    "test:smoke": "tsx scripts/smoke-test.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5"
+  }
+}

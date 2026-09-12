@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manara Maintenance Desk</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar"><div class="brand-mark">M</div><div><p class="eyebrow">SMMB / FACILITIES</p><h1>Maintenance desk</h1></div><span class="connection"><i></i>Local services online</span></header>
+      <section class="intro"><div><p class="eyebrow accent">OPERATIONS OVERVIEW</p><h2>Keep every intervention moving.</h2><p class="lede">Submit a request, follow its handoffs, and give the field team a clear next action.</p></div><div class="date-card"><span>Today</span><strong id="today"></strong></div></section>
+      <section class="metrics"><div><span>Open requests</span><strong id="open-count">0</strong></div><div><span>In progress</span><strong id="progress-count">0</strong></div><div><span>Completed</span><strong id="completed-count">0</strong></div></section>
+      <section class="workspace"><div class="panel form-panel"><div class="panel-heading"><div><p class="eyebrow">NEW TICKET</p><h3>Report an issue</h3></div><span class="priority-dot"></span></div><form id="request-form"><label>Location<input name="location" required placeholder="Building, floor or room" /></label><label>Requester<input name="requester" required value="client1" /></label><label>Phone number<input name="phoneNumber" required placeholder="+213 ..." /></label><label>Urgency<select name="urgencyLevel"><option value="low">Low</option><option value="medium" selected>Medium</option><option value="high">High</option></select></label><label>Issue description<textarea name="problemDescription" required placeholder="What needs attention?"></textarea></label><button type="submit">Create request <span>→</span></button><p class="form-message" id="form-message"></p></form></div><div class="panel list-panel"><div class="panel-heading"><div><p class="eyebrow">LIVE QUEUE</p><h3>Recent requests</h3></div><button class="refresh" id="refresh" title="Refresh requests">↻</button></div><div id="request-list" class="request-list"><p class="empty">No requests yet. Your queue is clear.</p></div></div></section>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
